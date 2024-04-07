@@ -18,7 +18,7 @@ struct MotionAnimationView: View {
         ZStack{
             ForEach(0...randomCircle, id: \.self) {circle in
                 Circle()
-                    .foregroundColor(.gray)
+                    .foregroundColor(.white)
                     .opacity(0.25)
                     .frame(width: randomSize())
                     .position(
@@ -70,3 +70,4 @@ func randomDelay() -> Double{
 #Preview {
     MotionAnimationView()
 }
+
